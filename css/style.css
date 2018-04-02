@@ -23,6 +23,7 @@ body {
   width: 240px;
   height: 50px;
   background-color: #fb565a;
+  border-radius: 5px;
 }
 
 .main-header {
@@ -219,4 +220,57 @@ tr.percent td {
 
 sup {
   top: -9px
+}
+
+.partners {
+  min-height: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.v-divide {
+  display: block;
+  height: 52px;
+  border: 1px solid #000;  
+}
+
+.partners a {
+  text-decoration: none;
+}
+
+.contacts {
+  margin-top: 80px;
+  min-height: 310px;
+  background: #efede8 url("../img/map-with-marker.jpg") top center no-repeat;
+  padding: 53px 0;
+}
+
+.contacts-inner {
+  width: 220px;
+  height: 210px;
+  background-color: #fff;
+  padding: 50px;
+}
+
+.contacts-inner h2 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.contacts-inner p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.contacts-inner .button {
+  border: none;
+  width: 220px;
 }
