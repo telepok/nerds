@@ -255,7 +255,7 @@ sup {
 }
 
 .partners {
-  min-height: 180px;
+  height: 180px;
   display: flex;
   justify-content: space-between;
   align-items: center
@@ -308,7 +308,7 @@ sup {
 }
 
 .main-footer {
-  min-height: 215px;
+  height: 215px;
   display: flex;
   align-items: center;
 }
