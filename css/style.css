@@ -408,3 +408,74 @@ sup {
   color: #444444;
 }
 
+/* 
+**********************************************
+* Catalog
+**********************************************
+*/
+
+.main-header {
+  min-height: 305px;
+}
+
+.main-header h1 {
+  margin: 0;
+  margin-top: 80px;
+  /* padding-bottom: 115px; */
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.filter {
+  width: 260px;
+}
+
+.filter h2 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"] {
+  display: none;
+}
+
+.form label {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+}
+
+.form input[type="radio"] + label::before {
+  position: absolute;
+  content:"";
+  background-image: url("../img/radio-off.svg");
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.form input[type="radio"]:checked + label::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.form input[type="checkbox"] + label::before {
+  position: absolute;
+  content:"";
+  background-image: url("../img/checkbox-off.svg");
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+}
+
+.form input[type="checkbox"]:checked + label::before {
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+}
