@@ -25,6 +25,17 @@ body {
   height: 50px;
   background-color: #fb565a;
   border-radius: 5px;
+  /* outline: none; */
+
+  border: none;
+}
+
+.button:hover {
+  background-color: #e74246;
+}
+
+.button:active {
+  box-shadow: inset 0 3px #c13135;  
 }
 
 .main-header {
@@ -62,10 +73,20 @@ body {
 }
 
 .main-navigation a {
+  position: relative;
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
 } 
+
+.main-navigation a.current::after {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: -10px;
+  width: 74px;
+  border: 1px solid #fb565a;
+}
 
 .cart {
   position: relative;
@@ -81,8 +102,7 @@ body {
   width: 15px;
   height: 15px;
   left: -42px;
-  background-image: url("../img/cart-icon.svg");  
-  
+  background-image: url("../img/cart-icon.svg");    
 }
 
 .main-navigation a:hover,
@@ -92,8 +112,8 @@ body {
 
 .main-navigation a:active,
 .cart:active {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, .3);
+
 }
 
 .slider-item {
@@ -117,9 +137,6 @@ body {
 
 .slider-item-1 {
   background: url(../img/slide1.png) no-repeat right bottom;
-}
-
-.main-header .button {
 }
 
 .advantages {
@@ -155,16 +172,37 @@ body {
   height: 50px;
 }
 
-.advantages-item-1 .button {
+/* .advantages-item-1 .button {
   background-color: #fb565a;
 }
 
-.advantages-item-2 .button {
+.advantages-item-1 .button:hover {
+  background-color: #e74246;
+}
+ */
+
+ .advantages-item-2 .button {
   background-color: #00ca74;
+}
+
+.advantages-item-2 .button:hover {
+  background-color: #00bc6c;
+}
+
+.advantages-item-2 .button:active {
+  box-shadow: inset 0 3px #009958;
 }
 
 .advantages-item-3 .button {
   background-color: #efc84a;
+}
+
+.advantages-item-3 .button:hover {
+  background-color: #eab534;
+}
+
+.advantages-item-3 .button:active {
+  box-shadow: inset 0 3px #ce961f;
 }
 
 .divide {  
@@ -258,7 +296,9 @@ sup {
   height: 180px;
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .v-divide {
@@ -269,6 +309,15 @@ sup {
 
 .partners a {
   text-decoration: none;
+  opacity: 0.2;
+}
+
+.partners a:hover {
+  opacity: 1;
+}
+
+.partners a:active {
+  opacity: 0.1;
 }
 
 .contacts {
@@ -303,7 +352,6 @@ sup {
 }
 
 .contacts-inner .button {
-  border: none;
   width: 220px;
 }
 
@@ -359,3 +407,4 @@ sup {
   font-weight: 400;  
   color: #444444;
 }
+
