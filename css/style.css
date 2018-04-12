@@ -502,7 +502,7 @@ input[type="checkbox"] + label {
   position: absolute;
   content:"";
   background-image: url("../img/checkbox-off.svg");
-  top: 0;
+  top: -4px;
   left: 0;
   width: 23px;
   height: 23px;
@@ -635,4 +635,31 @@ input[type="checkbox"] + label {
 
 .catalog-items .catalog-item:hover svg {
   opacity: 1;
+}
+
+.pagination ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.pagination .button {
+  width: 50px;
+  height: 50px;
+  background-color: #eeeeee;
+  margin-right: 10px;
+}
+
+.pagination .button.next {
+  width: 260px;
+}
+
+.pagination .button:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination .button:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px #bfbfbf;  
 }
