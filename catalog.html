@@ -49,47 +49,157 @@
         <h2>Стоимость</h2>
         <div class="filter-slider"></div>
         <h2>Сетка</h2>
-        <input type="radio" name="radio" id="radio-1" checked>
-        <label for="radio-1">Адаптивная</label>
-        <input type="radio" name="radio" id="radio-2">
-        <label for="radio-2">Фиксированная</label>
-        <input type="radio" name="radio" id="radio-3">
-        <label for="radio-3">Резиновая</label>
+        <div class="input-radio">
+          <input type="radio" name="radio" id="radio-1" checked>
+          <label for="radio-1">Адаптивная</label>
+          <input type="radio" name="radio" id="radio-2">
+          <label for="radio-2">Фиксированная</label>
+          <input type="radio" name="radio" id="radio-3">
+          <label for="radio-3">Резиновая</label>
+        </div>
         <h2>Особенности</h2>
-        <input type="checkbox" name="checkbox-1" id="checkbox-1" checked>
-        <label for="checkbox-1">Слайдер</label>
-        <input type="checkbox" name="checkbox-2" id="checkbox-2">
-        <label for="checkbox-1">Блок преимуществ></label>
-        <input type="checkbox" name="checkbox-3" id="checkbox-3" checked>
-        <label for="checkbox-1">Новости></label>
-        <input type="checkbox" name="checkbox-4" id="checkbox-4">
-        <label for="checkbox-1">Галерея></label>
-        <input type="checkbox" name="checkbox-5" id="checkbox-5">
-        <label for="checkbox-1">Корзина></label>
+        <div class="input-checkbox">
+          <input type="checkbox" name="checkbox-1" id="checkbox-1" checked>
+          <label for="checkbox-1">Слайдер</label>
+          <input type="checkbox" name="checkbox-2" id="checkbox-2">
+          <label for="checkbox-2">Блок преимуществ</label>
+          <input type="checkbox" name="checkbox-3" id="checkbox-3" checked>
+          <label for="checkbox-3">Новости</label>
+          <input type="checkbox" name="checkbox-4" id="checkbox-4">
+          <label for="checkbox-4">Галерея</label>
+          <input type="checkbox" name="checkbox-5" id="checkbox-5">
+          <label for="checkbox-5">Корзина</label>
+        </div>
         <button class="button" type="submit">Показать</button>
       </form>
     </div>
     <div class="catalog">
-      <h2>Сортировать</h2>
-      <div class="sorting">
-        <span class="sort-mode current">По цене</span>
-        <span class="sort-mode">По типу</span>
-        <span class="sort-mode">По названию</span>        
+      <div class="catalog-header">
+        <h2>Сортировать</h2>
+        <div class="sorting-mode">
+          <a class="current" href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По названию</a>
+        </div>
+        <div class="sorting-direction">
+          <a class="down" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#231F20" d="M5.5 10L0 0h11" />
+            </svg>
+          </a>
+          <a class="up" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#231F20" d="M5.5 0L0 10h11z" />
+            </svg>
+          </a>
+        </div>
       </div>
       <div class="catalog-items">
-        <a href=""><img src="img/img-sedona.jpg" alt=""></a>
-        <a href=""><img src="img/img-pink.jpg" alt=""></a>
-        <a href=""><img src="img/img-barbershop.jpg" alt=""></a>
-        <a href=""><img src="img/img-mishka.jpg" alt=""></a>
-        <a href=""><img src="img/img-aplus.jpg" alt=""></a>
-        <a href=""><img src="img/img-kvast.jpg" alt=""></a>
+        <div class="catalog-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+            <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"
+            />
+          </svg>
+          <a href="">
+            <img src="img/img-sedona.jpg" alt="">
+          </a>
+          <div class="info">
+            <h2>Sedona</h2>
+            <p>Информационный сайт
+              <br>для туристов</p>
+            <a href="#" class="button">9 900 руб.</a>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+            <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"
+            />
+          </svg>
+          <a href="">
+            <img src="img/img-pink.jpg" alt="">
+          </a>
+          <div class="info">
+            <h2>Sedona</h2>
+            <p>Информационный сайт
+              <br>для туристов</p>
+            <a href="#" class="button">9 900 руб.</a>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+            <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"
+            />
+          </svg>
+          <a href="">
+            <img src="img/img-barbershop.jpg" alt="">
+          </a>
+          <div class="info">
+            <h2>Sedona</h2>
+            <p>Информационный сайт
+              <br>для туристов</p>
+            <a href="#" class="button">9 900 руб.</a>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+            <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"
+            />
+          </svg>
+          <a href="">
+            <img src="img/img-mishka.jpg" alt="">
+          </a>
+          <div class="info">
+            <h2>Sedona</h2>
+            <p>Информационный сайт
+              <br>для туристов</p>
+            <a href="#" class="button">9 900 руб.</a>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+            <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"
+            />
+          </svg>
+          <a href="">
+            <img src="img/img-aplus.jpg" alt="">
+          </a>
+          <div class="info">
+            <h2>Sedona</h2>
+            <p>Информационный сайт
+              <br>для туристов</p>
+            <a href="#" class="button">9 900 руб.</a>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+            <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"
+            />
+          </svg>
+          <a href="">
+            <img src="img/img-kvast.jpg" alt="">
+          </a>
+          <div class="info">
+            <h2>Sedona</h2>
+            <p>Информационный сайт
+              <br>для туристов</p>
+            <a href="#" class="button">9 900 руб.</a>
+          </div>
+        </div>
       </div>
       <div class="pagination">
         <ul>
-          <li><a href="">1</a></li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li><a href="">Следующая</a></li>
+          <li>
+            <a href="">1</a>
+          </li>
+          <li>
+            <a href="">2</a>
+          </li>
+          <li>
+            <a href="">3</a>
+          </li>
+          <li>
+            <a href="">Следующая</a>
+          </li>
         </ul>
       </div>
     </div>

@@ -26,6 +26,8 @@ body {
   background-color: #fb565a;
   border-radius: 5px;
   /* outline: none; */
+  text-transform: uppercase;
+  font-weight: 500;
 
   border: none;
 }
@@ -35,7 +37,9 @@ body {
 }
 
 .button:active {
+  background-color: #d7373b;
   box-shadow: inset 0 3px #c13135;  
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .main-header {
@@ -190,6 +194,7 @@ body {
 }
 
 .advantages-item-2 .button:active {
+  background-color: #00aa62;
   box-shadow: inset 0 3px #009958;
 }
 
@@ -202,6 +207,7 @@ body {
 }
 
 .advantages-item-3 .button:active {
+  background-color: #e5a722;
   box-shadow: inset 0 3px #ce961f;
 }
 
@@ -428,8 +434,14 @@ sup {
   text-align: center;
 }
 
+.catalog-main {
+  display: flex;  
+}
+
 .filter {
   width: 260px;
+  padding-top: 60px;
+  margin-right: 140px;
 }
 
 .filter h2 {
@@ -437,6 +449,20 @@ sup {
   font-size: 18px;
   line-height: 30px;
   font-weight: 500;
+}
+
+.filter-slider {
+  min-height: 250px;
+}
+
+.input-radio {
+  padding-top: 20px;
+  padding-bottom: 55px;
+}
+
+.input-checkbox {
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .form input[type="radio"],
@@ -447,14 +473,22 @@ sup {
 .form label {
   position: relative;
   display: block;
-  padding-left: 30px;
+  padding-left: 35px;  
+}
+
+input[type="radio"] + label {
+  padding-bottom: 15px;
+}
+
+input[type="checkbox"] + label {
+  padding-bottom: 20px;
 }
 
 .form input[type="radio"] + label::before {
   position: absolute;
   content:"";
   background-image: url("../img/radio-off.svg");
-  top: 0;
+  top: -4px;
   left: 0;
   width: 25px;
   height: 25px;
@@ -478,4 +512,127 @@ sup {
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
+}
+
+.form .button {
+  width: 100%;
+  background-color: #eeeeee;
+  color: #000;
+}
+
+.form .button:hover {
+  background-color: #dfdfdf;
+}
+
+.form .button:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px #bfbfbf;
+  color: rgba(0, 0, 0, .3);
+}
+
+.catalog {
+  width: 760px;
+  padding-top: 60px;
+}
+
+.catalog-header {
+  display: flex;
+}
+
+.catalog h2 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  width: 360px;
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+
+.sorting-mode {
+  display: flex;  
+}
+
+.sorting-mode a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-right: 25px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.sorting-mode a.current {
+  color: rgba(0, 0, 0, 1);
+}
+
+.sorting-direction {
+  display: flex;
+  width: 40px;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.catalog-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.catalog-items .catalog-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 33px;
+}
+
+.catalog-items .catalog-item .info {
+  /* display: none; */
+  display: flex;
+  position: absolute;
+  width: 360px;
+  height: 230px;
+  background-color: #eeeeee;
+  bottom: 0;
+  flex-direction: column;
+  align-items: center;
+  transition: all .5s;
+  opacity: 0;
+}
+
+.catalog-items .catalog-item .info h2 {
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.catalog-items .catalog-item p {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 35px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.catalog-items .catalog-item .button {
+  width: 200px;
+}
+
+.catalog-items .catalog-item:hover .info {
+  opacity: 1;
+}
+
+.catalog-items .catalog-item svg {
+  opacity: 0.2;
+}
+
+.catalog-items .catalog-item:hover svg {
+  opacity: 1;
 }
